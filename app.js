@@ -18,4 +18,4 @@
 
 let x = document.getElementsByClassName('a12');
 x[0].style.color = "green";
-console.log("i love u");
+console.log("i love india");

@@ -30,11 +30,8 @@ function f3(name,roll,age){
 f3("Muskan",75,21);
 
 
-function f4(a, b){
-    return a+b;
+ function ab (a, b){
+  console.log(a+b)
 }
-
-let c = f4(2,3);
-console.log(c);
 
 

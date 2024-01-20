@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="alertAndPrompt.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="StrMethods.js"></script>
+ 
+  <script src="ourApi.js"></script>
+  <title>Ayush</title>
+  
 </head>
 <body>
-    <h1>hnhnhn</h1>
+    <h1 >hyy.. I am ayush
+    it's time for external css
+    </h1>
 </body>
+
+<script>
+
+let url = 'https://catfact.ninja/fact';
+
+let obj  = fetch(url);
+
+obj.then(
+  (res)=>{
+    console.log(res);
+    return res.json();
+  }
+)
+.then(
+
+(data)=>{
+
+  console.log(data.length)
+
+}
+)
+
+.catch(
+  (er)=>{
+    console.log(er)
+  }
+);
+
+
+
+
+let a;
+// fetch(url)
+// .then(
+//     (resolve)=>{
+//         console.log(resolve)
+//         return resolve.json();
+//     }
+// )
+// .then(
+// (data)=>{
+
+// //   a= data.fact;
+  
+// // ak(a);
+
+// }
+// )
+
+// .catch(
+//     (err)=>{
+//         console.log(err)
+//     }
+// );
+
+let h1 = document.querySelector('h1');
+let ak = (a)=>{
+h1.innerText = a;
+}
+
+
+</script>
 </html>
